@@ -1,0 +1,455 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire"
+    ]
+  },
+  "title": "eGesundheitsheft für Kinder",
+  "status": "draft",
+  "item": [
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "245841603042",
+          "text": "Name"
+        },
+        {
+          "type": "date",
+          "linkId": "785769961792",
+          "text": "Geburtsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "594507149221",
+          "text": "Nationalität"
+        },
+        {
+          "type": "choice",
+          "linkId": "404319147189",
+          "text": "Kommunikationssprache"
+        },
+        {
+          "type": "string",
+          "linkId": "722372996097",
+          "text": "Adresse"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "997553610916",
+      "text": "Stammdaten",
+      "repeats": false
+    },
+    {
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "107071755754",
+      "text": "Elternteil",
+      "repeats": true,
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "931117230259",
+          "text": "Art des Elternteils",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Biologische Mutter"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Biologischer Vater"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Soziale Mutter"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Sozialer Vater"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "563522186625",
+          "text": "Name"
+        },
+        {
+          "type": "string",
+          "linkId": "563017097749",
+          "text": "Geburtsdatum"
+        },
+        {
+          "type": "string",
+          "linkId": "720182198822",
+          "text": "Nationalität"
+        },
+        {
+          "type": "string",
+          "linkId": "402740908865",
+          "text": "Kommunikationssprache"
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "926281173242",
+          "text": "Rolle"
+        },
+        {
+          "type": "string",
+          "linkId": "620042713315",
+          "text": "Name"
+        },
+        {
+          "type": "string",
+          "linkId": "409761895785",
+          "text": "Telefon"
+        },
+        {
+          "type": "string",
+          "linkId": "538361128697",
+          "text": "E-Mailadresse"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "501476274983",
+      "text": "Behandelnde Leistungserbringer",
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "521884343183",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "item": [
+            {
+              "type": "string",
+              "linkId": "547742393739",
+              "text": "Geschlecht"
+            },
+            {
+              "type": "string",
+              "linkId": "824047448990",
+              "text": "Blutgruppe"
+            },
+            {
+              "type": "string",
+              "linkId": "665913410072",
+              "text": "Rhesus"
+            },
+            {
+              "type": "string",
+              "linkId": "386438625021",
+              "text": "Blutgruppe der Mutter"
+            },
+            {
+              "type": "string",
+              "linkId": "172279527637",
+              "text": "Rhesus der Mutter"
+            },
+            {
+              "type": "string",
+              "linkId": "260389579341",
+              "text": "Direkter Coombs-Test"
+            },
+            {
+              "type": "string",
+              "linkId": "472697581506",
+              "text": "Nabelschnur-pH venös"
+            },
+            {
+              "type": "string",
+              "linkId": "523027119481",
+              "text": "Nabelschnur-pH arteriell"
+            },
+            {
+              "type": "string",
+              "linkId": "843089219684",
+              "text": "Kindslage"
+            },
+            {
+              "type": "string",
+              "linkId": "553562787632",
+              "text": "Geburtsart"
+            },
+            {
+              "type": "string",
+              "linkId": "371512585820",
+              "text": "Geburtsmodus"
+            },
+            {
+              "type": "string",
+              "linkId": "128633029818",
+              "text": "Geburtsort"
+            },
+            {
+              "type": "string",
+              "linkId": "754673299386",
+              "text": "Risikofaktor für Infekt vorhanden"
+            },
+            {
+              "type": "string",
+              "linkId": "395134864117",
+              "text": "Risikofaktor für Infekt"
+            },
+            {
+              "type": "string",
+              "linkId": "799705976731",
+              "text": "Bemerkungen"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "333762209498",
+          "text": "Geburtsanamnese"
+        },
+        {
+          "item": [
+            {
+              "type": "string",
+              "linkId": "754644063244",
+              "text": "Schwangerschaftsdauer"
+            },
+            {
+              "type": "string",
+              "linkId": "849960231080",
+              "text": "Schwangerschaftswochen"
+            },
+            {
+              "type": "string",
+              "linkId": "534061743972",
+              "text": "Schwangerschaftstage"
+            },
+            {
+              "type": "string",
+              "linkId": "328595258679",
+              "text": "Parität"
+            },
+            {
+              "type": "dateTime",
+              "linkId": "459551747590",
+              "text": "Geburtsdatum und Uhrzeit"
+            },
+            {
+              "type": "string",
+              "linkId": "778247412925",
+              "text": "Schwangerschaftsanamnese"
+            },
+            {
+              "type": "string",
+              "linkId": "202178872577",
+              "text": "Pränataldiagnostik"
+            },
+            {
+              "type": "string",
+              "linkId": "550161924472",
+              "text": "Bemerkungen"
+            }
+          ],
+          "type": "group",
+          "linkId": "751471718185",
+          "text": "Schwangerschaftsanamnese"
+        },
+        {
+          "type": "string",
+          "linkId": "486049897431",
+          "text": "Familienanamnese",
+          "repeats": true
+        },
+        {
+          "type": "string",
+          "linkId": "589913744941",
+          "text": "Sozialanamnese"
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "string",
+                  "linkId": "449551727314",
+                  "text": "Apgar-Score Wert"
+                },
+                {
+                  "type": "string",
+                  "linkId": "434157677778",
+                  "text": "Apgar-Score Zeitpunkt"
+                }
+              ],
+              "type": "string",
+              "linkId": "969176312211",
+              "text": "Apgar-Score",
+              "repeats": true
+            }
+          ],
+          "type": "string",
+          "linkId": "746759350877",
+          "text": "Untersuchung"
+        }
+      ],
+      "type": "group",
+      "linkId": "998162020739",
+      "text": "Vorsorgeuntersuchung Geburt"
+    },
+    {
+      "type": "group",
+      "linkId": "932233723027",
+      "text": "Vorsorgeuntersuchung 1. Lebenswoche"
+    },
+    {
+      "type": "group",
+      "linkId": "495871794500",
+      "text": "Vorsorgeuntersuchung 1. Monat"
+    },
+    {
+      "type": "group",
+      "linkId": "632101752131",
+      "text": "Vorsorgeuntersuchung 4 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "545060753268",
+      "text": "Vorsorgeuntersuchung 6 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "675470411512",
+      "text": "Vorsorgeuntersuchung 9 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "756633360713",
+      "text": "Vorsorgeuntersuchung 12 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "529107226504",
+      "text": "Vorsorgeuntersuchung 18 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "914076257004",
+      "text": "Vorsorgeuntersuchung 24 Monate"
+    },
+    {
+      "type": "group",
+      "linkId": "900067836885",
+      "text": "Vorsorgeuntersuchung 3 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "797471923035",
+      "text": "Vorsorgeuntersuchung 4 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "112950421432",
+      "text": "Vorsorgeuntersuchung 6 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "754861424839",
+      "text": "Vorsorgeuntersuchung 10 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "725305230244",
+      "text": "Vorsorgeuntersuchung 12 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "773569971853",
+      "text": "Vorsorgeuntersuchung 14 Jahre"
+    },
+    {
+      "type": "group",
+      "linkId": "501031472644",
+      "text": "Schulgesundheitsdienst"
+    },
+    {
+      "type": "group",
+      "linkId": "392004030396",
+      "text": "Impfungen"
+    }
+  ]
+}
