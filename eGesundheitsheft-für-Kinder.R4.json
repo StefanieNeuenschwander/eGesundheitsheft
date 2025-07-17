@@ -183,79 +183,93 @@
     {
       "item": [
         {
-          "type": "choice",
+          "type": "date",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
           "linkId": "521884343183",
           "text": "Untersuchungsdatum"
         },
         {
           "item": [
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "547742393739",
               "text": "Geschlecht"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "824047448990",
               "text": "Blutgruppe"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "665913410072",
               "text": "Rhesus"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "386438625021",
               "text": "Blutgruppe der Mutter"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "172279527637",
               "text": "Rhesus der Mutter"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "260389579341",
               "text": "Direkter Coombs-Test"
             },
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "472697581506",
               "text": "Nabelschnur-pH venös"
             },
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "523027119481",
               "text": "Nabelschnur-pH arteriell"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "843089219684",
               "text": "Kindslage"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "553562787632",
               "text": "Geburtsart"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "371512585820",
               "text": "Geburtsmodus"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "128633029818",
               "text": "Geburtsort"
             },
             {
-              "type": "string",
+              "type": "boolean",
               "linkId": "754673299386",
               "text": "Risikofaktor für Infekt vorhanden"
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "395134864117",
               "text": "Risikofaktor für Infekt"
             },
@@ -286,22 +300,22 @@
         {
           "item": [
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "754644063244",
               "text": "Schwangerschaftsdauer"
             },
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "849960231080",
               "text": "Schwangerschaftswochen"
             },
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "534061743972",
               "text": "Schwangerschaftstage"
             },
             {
-              "type": "string",
+              "type": "quantity",
               "linkId": "328595258679",
               "text": "Parität"
             },
@@ -311,12 +325,27 @@
               "text": "Geburtsdatum und Uhrzeit"
             },
             {
-              "type": "string",
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
               "linkId": "778247412925",
-              "text": "Schwangerschaftsanamnese"
+              "text": "Schwangerschaftsanamnese",
+              "repeats": true
             },
             {
-              "type": "string",
+              "type": "choice",
               "linkId": "202178872577",
               "text": "Pränataldiagnostik"
             },
@@ -331,15 +360,16 @@
           "text": "Schwangerschaftsanamnese"
         },
         {
-          "type": "string",
+          "type": "choice",
           "linkId": "486049897431",
           "text": "Familienanamnese",
           "repeats": true
         },
         {
-          "type": "string",
+          "type": "choice",
           "linkId": "589913744941",
-          "text": "Sozialanamnese"
+          "text": "Sozialanamnese",
+          "repeats": true
         },
         {
           "item": [
@@ -356,10 +386,85 @@
                   "text": "Apgar-Score Zeitpunkt"
                 }
               ],
-              "type": "string",
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
               "linkId": "969176312211",
               "text": "Apgar-Score",
               "repeats": true
+            },
+            {
+              "type": "quantity",
+              "linkId": "451737546198",
+              "text": "Länge"
+            },
+            {
+              "type": "quantity",
+              "linkId": "800807581970",
+              "text": "Gewicht"
+            },
+            {
+              "type": "quantity",
+              "linkId": "325795174462",
+              "text": "Kopfumfang"
+            },
+            {
+              "type": "string",
+              "linkId": "718572607499",
+              "text": "Beobachtungen"
+            },
+            {
+              "type": "string",
+              "linkId": "744249999088",
+              "text": "Bemerkung Erstversorgung"
+            },
+            {
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "921722585922",
+              "text": "Vitamin-K-Prophylaxe",
+              "item": [
+                {
+                  "type": "choice",
+                  "linkId": "638315396264",
+                  "text": "1. Dosis"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "152517215269",
+                  "text": "2. Dosis"
+                },
+                {
+                  "type": "string",
+                  "linkId": "661141889896",
+                  "text": "Bemerkung Gabe Vitamin K"
+                }
+              ]
             }
           ],
           "type": "string",
@@ -372,6 +477,116 @@
       "text": "Vorsorgeuntersuchung Geburt"
     },
     {
+      "item": [
+        {
+          "type": "dateTime",
+          "linkId": "599445451242",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "562301916799",
+          "text": "Aktuelle Anamnese",
+          "repeats": true
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "345401180608",
+          "text": "Ernährung",
+          "repeats": false
+        },
+        {
+          "type": "string",
+          "linkId": "258975456464",
+          "text": "Bemerkung zur Ernährung"
+        },
+        {
+          "type": "quantity",
+          "linkId": "959929539600",
+          "text": "Länge"
+        },
+        {
+          "type": "quantity",
+          "linkId": "352400334875",
+          "text": "Gewicht"
+        },
+        {
+          "type": "string",
+          "linkId": "291239048623",
+          "text": "Kopfumfang"
+        },
+        {
+          "type": "string",
+          "linkId": "328971917741",
+          "text": "Untersuchung im Wochenbett (unauffällig/auffällig/unbekannt)"
+        },
+        {
+          "type": "string",
+          "linkId": "177589660733",
+          "text": "Bemerkung Wochenbett"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "linkId": "931414797097",
+              "text": "Methode"
+            },
+            {
+              "type": "quantity",
+              "linkId": "744432477244",
+              "text": "Ergebnis"
+            },
+            {
+              "type": "date",
+              "linkId": "556412365422",
+              "text": "Datum"
+            },
+            {
+              "type": "string",
+              "linkId": "607939779511",
+              "text": "Bemerkungen"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "409010204664",
+          "text": "Bilirubinwerte",
+          "repeats": true
+        },
+        {
+          "type": "choice",
+          "linkId": "707287817785",
+          "text": "Vitamin-K-Prophylaxe: 2. Dosis"
+        }
+      ],
       "type": "group",
       "linkId": "932233723027",
       "text": "Vorsorgeuntersuchung 1. Lebenswoche"
