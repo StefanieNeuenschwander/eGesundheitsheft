@@ -53,27 +53,17 @@
       ],
       "linkId": "997553610916",
       "text": "Stammdaten",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
       "repeats": false
     },
     {
-      "type": "group",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "code": "gtable",
-                "display": "Group Table"
-              }
-            ]
-          }
-        }
-      ],
-      "linkId": "107071755754",
-      "text": "Elternteil",
-      "repeats": true,
       "item": [
         {
           "type": "choice",
@@ -136,7 +126,33 @@
           "linkId": "402740908865",
           "text": "Kommunikationssprache"
         }
-      ]
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "107071755754",
+      "text": "Elternteil",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "repeats": true
     },
     {
       "item": [
@@ -178,6 +194,14 @@
       ],
       "linkId": "501476274983",
       "text": "Behandelnde Leistungserbringer",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
       "repeats": true
     },
     {
@@ -474,7 +498,15 @@
       ],
       "type": "group",
       "linkId": "998162020739",
-      "text": "Vorsorgeuntersuchung Geburt"
+      "text": "Vorsorgeuntersuchung Geburt",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "item": [
@@ -589,82 +621,268 @@
       ],
       "type": "group",
       "linkId": "932233723027",
-      "text": "Vorsorgeuntersuchung 1. Lebenswoche"
+      "text": "Vorsorgeuntersuchung 1. Lebenswoche",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "495871794500",
-      "text": "Vorsorgeuntersuchung 1. Monat"
+      "text": "Vorsorgeuntersuchung 1. Monat",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "item": [
+        {
+          "type": "dateTime",
+          "linkId": "254223733357",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "114849248258",
+          "text": "Aktuelle Anamnese",
+          "repeats": true
+        },
+        {
+          "type": "choice",
+          "linkId": "406313018617",
+          "text": "Familienanamnese"
+        },
+        {
+          "type": "choice",
+          "linkId": "901382548154",
+          "text": "Allergie"
+        },
+        {
+          "type": "choice",
+          "linkId": "323498286790",
+          "text": "Ernährung"
+        },
+        {
+          "type": "string",
+          "linkId": "656761585791",
+          "text": "Bemerkungen zur Ernährung"
+        },
+        {
+          "type": "quantity",
+          "linkId": "162268098620",
+          "text": "Länge"
+        },
+        {
+          "type": "quantity",
+          "linkId": "702329627767",
+          "text": "Gewicht"
+        },
+        {
+          "type": "string",
+          "linkId": "652394235507",
+          "text": "Kopfumfang"
+        },
+        {
+          "type": "string",
+          "linkId": "798939213674",
+          "text": "Stuhlfarbe"
+        },
+        {
+          "type": "choice",
+          "linkId": "765948077960",
+          "text": "Vitamin-K-Prophylaxe: 3. Dosis"
+        }
+      ]
     },
     {
       "type": "group",
       "linkId": "632101752131",
-      "text": "Vorsorgeuntersuchung 4 Monate"
+      "text": "Vorsorgeuntersuchung 4 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "545060753268",
-      "text": "Vorsorgeuntersuchung 6 Monate"
+      "text": "Vorsorgeuntersuchung 6 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "675470411512",
-      "text": "Vorsorgeuntersuchung 9 Monate"
+      "text": "Vorsorgeuntersuchung 9 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "756633360713",
-      "text": "Vorsorgeuntersuchung 12 Monate"
+      "text": "Vorsorgeuntersuchung 12 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "529107226504",
-      "text": "Vorsorgeuntersuchung 18 Monate"
+      "text": "Vorsorgeuntersuchung 18 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "914076257004",
-      "text": "Vorsorgeuntersuchung 24 Monate"
+      "text": "Vorsorgeuntersuchung 24 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "900067836885",
-      "text": "Vorsorgeuntersuchung 3 Jahre"
+      "text": "Vorsorgeuntersuchung 3 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "797471923035",
-      "text": "Vorsorgeuntersuchung 4 Jahre"
+      "text": "Vorsorgeuntersuchung 4 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "112950421432",
-      "text": "Vorsorgeuntersuchung 6 Jahre"
+      "text": "Vorsorgeuntersuchung 6 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "754861424839",
-      "text": "Vorsorgeuntersuchung 10 Jahre"
+      "text": "Vorsorgeuntersuchung 10 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "725305230244",
-      "text": "Vorsorgeuntersuchung 12 Jahre"
+      "text": "Vorsorgeuntersuchung 12 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "773569971853",
-      "text": "Vorsorgeuntersuchung 14 Jahre"
+      "text": "Vorsorgeuntersuchung 14 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "501031472644",
-      "text": "Schulgesundheitsdienst"
+      "text": "Schulgesundheitsdienst",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     },
     {
       "type": "group",
       "linkId": "392004030396",
-      "text": "Impfungen"
+      "text": "Impfungen",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
     }
   ]
 }
