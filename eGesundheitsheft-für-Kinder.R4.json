@@ -512,6 +512,464 @@
       "item": [
         {
           "type": "dateTime",
+          "linkId": "356426979453",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "462319081828",
+          "text": "Zeitpunkt der Untersuchung"
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "linkId": "292499164080",
+              "text": "Anzahl der täglichen Mahlzeiten"
+            },
+            {
+              "type": "quantity",
+              "linkId": "417514970799",
+              "text": "Menge der Mahlzeit"
+            },
+            {
+              "type": "string",
+              "linkId": "845051880490",
+              "text": "Bemerkung Mahlzeit"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "225692107497",
+              "text": "Saugverhalten",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "118170326065",
+              "text": "Bemerkungen Saugverhalten"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "512551488072",
+              "text": "Schlafverhalten",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "530703577703",
+              "text": "Bemerkungen Schlafverhalten"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "748098752715",
+              "text": "Aussscheidung",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "747991125352",
+              "text": "Bemerkung Ausscheidung"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "891354483777",
+              "text": "Stuhlgang / Verdauung",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "889106250230",
+              "text": "Bemerkungen Stuhlgang"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "875050476652",
+              "text": "Stuhlfarbe",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Normal (1-4)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Kontrollbedürftig (5-7)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "102820873950",
+          "text": "Untersuchte Felder"
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "°C"
+                  }
+                }
+              ],
+              "linkId": "772924970424",
+              "text": "Temperatur"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "Pro Minute"
+                  }
+                }
+              ],
+              "linkId": "466798413836",
+              "text": "Atemfrequenz"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "473756498325",
+              "text": "Haut",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Auffällige Blässe"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zyanose"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Ikterus"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hämangiome"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Naevi und andere Pigmentanomalien"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Ödeme"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Anhalt für Verletzungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hydratationszustand"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unauffälliger Hautbefund"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "113424779827",
+              "text": "Beurteilung Nabel",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Nabelklemme entfernt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabelrest dran"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel abgefallen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel reizlos"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel trocken"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel blutig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel schmierig"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "891857354457",
+          "text": "Untersuchung"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "list",
+                "display": "List"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "290467965486",
+      "text": "Kontrolle Hebammen",
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "dateTime",
           "linkId": "599445451242",
           "text": "Untersuchungsdatum"
         },
