@@ -1,0 +1,4332 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire"
+    ]
+  },
+  "title": "eGesundheitsheft für Kinder",
+  "status": "draft",
+  "item": [
+    {
+      "item": [
+        {
+          "type": "string",
+          "linkId": "245841603042",
+          "text": "Name"
+        },
+        {
+          "type": "date",
+          "linkId": "785769961792",
+          "text": "Geburtsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "594507149221",
+          "text": "Nationalität"
+        },
+        {
+          "type": "choice",
+          "linkId": "404319147189",
+          "text": "Kommunikationssprache"
+        },
+        {
+          "type": "string",
+          "linkId": "722372996097",
+          "text": "Adresse"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "997553610916",
+      "text": "Stammdaten",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "repeats": false
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "931117230259",
+          "text": "Art des Elternteils",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Biologische Mutter"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Biologischer Vater"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Soziale Mutter"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Sozialer Vater"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "563522186625",
+          "text": "Name"
+        },
+        {
+          "type": "date",
+          "linkId": "563017097749",
+          "text": "Geburtsdatum"
+        },
+        {
+          "type": "string",
+          "linkId": "720182198822",
+          "text": "Nationalität"
+        },
+        {
+          "type": "string",
+          "linkId": "402740908865",
+          "text": "Kommunikationssprache"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "107071755754",
+      "text": "Elternteil",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "926281173242",
+          "text": "Rolle"
+        },
+        {
+          "type": "string",
+          "linkId": "620042713315",
+          "text": "Name"
+        },
+        {
+          "type": "string",
+          "linkId": "409761895785",
+          "text": "Telefon"
+        },
+        {
+          "type": "string",
+          "linkId": "538361128697",
+          "text": "E-Mailadresse"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "gtable",
+                "display": "Group Table"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "501476274983",
+      "text": "Behandelnde Leistungserbringer",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "703388817140",
+          "text": "Untersuchungszeitpunkt",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Geburt"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Austrittsuntersuchung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1. Lebenswoche"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1 Monat"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "2 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "9 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "18 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "24 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "3 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "10 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "14 Jahre"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "521884343183",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "547742393739",
+              "text": "Geschlecht",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Weiblich"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Männlich"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbestimmt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "824047448990",
+              "text": "Blutgruppe",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "A"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "B"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "AB"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "665913410072",
+              "text": "Rhesus",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "RhD positiv"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "RhD negativ"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "386438625021",
+              "text": "Blutgruppe der Mutter",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "A"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "B"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "AB"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "172279527637",
+              "text": "Rhesus der Mutter",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "RhD positiv"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "RhD negativ"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "260389579341",
+              "text": "Direkter Coombs-Test",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Direkter Coombstest positiv"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Direkter Coombstest negativ"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "linkId": "472697581506",
+              "text": "Nabelschnur-pH venös"
+            },
+            {
+              "type": "quantity",
+              "linkId": "523027119481",
+              "text": "Nabelschnur-pH arteriell"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "843089219684",
+              "text": "Kindslage",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Schädellage"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Beckenendlage"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Querlage"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "371512585820",
+              "text": "Geburtsmodus",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Spontangeburt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Sectio"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Vaginal operativ"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "128633029818",
+              "text": "Geburtsort",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Spital"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Geburtshaus"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zu Hause"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Anderes"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "linkId": "754673299386",
+              "text": "Risikofaktor für Infekt vorhanden",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Ja"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nein"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "395134864117",
+              "text": "Risikofaktor für Infekt",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Vorzeitiger Blasensprung"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Fieber"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "text-box",
+                        "display": "Text Box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "799705976731",
+              "text": "Bemerkungen zur Geburt"
+            },
+            {
+              "item": [
+                {
+                  "type": "choice",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "drop-down",
+                            "display": "Drop down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "596112154767",
+                  "text": "Verlegung auf KIPS/Neonatologie",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Nein"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "KIPS"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Kinderklinik"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Unbekannt"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "date",
+                  "linkId": "694024857471",
+                  "text": "Datum der Verlegung"
+                },
+                {
+                  "type": "string",
+                  "linkId": "127958570021",
+                  "text": "Bemerkungen zur Verlegung"
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "842743195678",
+              "text": "Verlegung"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "333762209498",
+          "text": "Geburtsanamnese"
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "linkId": "754644063244",
+              "text": "Schwangerschaftsdauer"
+            },
+            {
+              "type": "quantity",
+              "linkId": "849960231080",
+              "text": "Schwangerschaftswochen"
+            },
+            {
+              "type": "quantity",
+              "linkId": "534061743972",
+              "text": "Schwangerschaftstage"
+            },
+            {
+              "type": "quantity",
+              "linkId": "328595258679",
+              "text": "Parität"
+            },
+            {
+              "type": "quantity",
+              "linkId": "142059929196",
+              "text": "Gravida"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "778247412925",
+              "text": "Schwangerschaftsanamnese",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Gestationsdiabetes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Diabetes mellitus"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Dauermedikation"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Akute oder chronische Infektionen in der Schwangerschaft"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Antikörper-Suchtest positiv"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "B-Streptokokken Status positiv"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Mehrlingsschwangerschaft"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Polyhydramnion"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Oligohydramnion "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "besondere psychische Belastungen "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "besondere soziale Belastungen "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Abusus*** (Nikotin, Alkohol, Drogen, nicht-substanzgebundene Sucht) "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Erkrankungen der Schilddrüse"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Allergien"
+                  }
+                }
+              ]
+            },
+            {
+              "item": [
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "131909574624",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "choice",
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "drop-down",
+                                "display": "Drop down"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "linkId": "355336916725",
+                      "text": "Status",
+                      "answerOption": [
+                        {
+                          "valueCoding": {
+                            "display": "Negativ"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "display": "Positiv"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "display": "Unbekannt"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "135077386454",
+                  "text": "B-Streptokokken",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "761250255353",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "choice",
+                      "linkId": "799728287991",
+                      "text": "Status",
+                      "answerOption": [
+                        {
+                          "valueCoding": {
+                            "display": "Negativ"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "display": "Geimpft"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "display": "Positiv"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "display": "Unbekannt"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "199088026395",
+                  "text": "Hepatitis B",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "240996460416",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "127171651913",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "639373403271",
+                  "text": "HBsAg",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "161293269097",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "644901085692",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "828956244346",
+                  "text": "HIV",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "773854347196",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "150670242225",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "520957098633",
+                  "text": "Hepatitis C",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "240056359550",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "462709845245",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "421230171832",
+                  "text": "Lues",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "874906522310",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "425772807556",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "573904692953",
+                  "text": "Toxoplasmose",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "662690232136",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "625649465119",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "193178373711",
+                  "text": "Röteln",
+                  "repeats": true
+                },
+                {
+                  "item": [
+                    {
+                      "type": "date",
+                      "linkId": "290545658583",
+                      "text": "Datum"
+                    },
+                    {
+                      "type": "string",
+                      "linkId": "560056646047",
+                      "text": "Status"
+                    }
+                  ],
+                  "type": "group",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "gtable",
+                            "display": "Group Table"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "809814395587",
+                  "text": "oGTT",
+                  "repeats": true
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "list",
+                        "display": "List"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "526372218312",
+              "text": "Labordiagnostik"
+            },
+            {
+              "type": "choice",
+              "linkId": "202178872577",
+              "text": "Pränataldiagnostik",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Ja"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nein"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "text-box",
+                        "display": "Text Box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "550161924472",
+              "text": "Bemerkungen zur Pränataldiagnostik"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "751471718185",
+          "text": "Schwangerschaftsanamnese"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "486049897431",
+              "text": "Familienanamnese",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Tumorerkrankungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Diabetes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Herz-Kreislaufprobleme"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hypertonie"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Erbkrankheiten"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Fehlbildung"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Psychische Erkrankungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Substanzgebundene Sucht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht-substanzgebundene Sucht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Augenerkrankungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Angeborene Hörstörungen oder Ohrfehlbildungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Immundefekte"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hüftdysplasie "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Allergien "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Epilepsie"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Herzryhthmusstörungen "
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg",
+                    "display": "kilogram"
+                  }
+                }
+              ],
+              "linkId": "982481647891",
+              "text": "Gewicht der Mutter vor der Schwangerschaft"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "127390386451",
+              "text": "Grösse der Mutter"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2",
+                    "display": "kilogram per square meter"
+                  }
+                }
+              ],
+              "linkId": "988242209336",
+              "text": "BMI der Mutter"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg",
+                    "display": "kilogram"
+                  }
+                }
+              ],
+              "linkId": "538981824707",
+              "text": "Gewicht des Vaters"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "114869674791",
+              "text": "Grösse des Vaters"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2",
+                    "display": "kilogram per square meter"
+                  }
+                }
+              ],
+              "linkId": "810545861635",
+              "text": "BMI des Vaters"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "302328023802",
+          "text": "Angaben zur Familienanamnese"
+        },
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "589913744941",
+          "text": "Sozialanamnese",
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Ausbildung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Arbeitstätigkeit"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Ethnizität"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Wohn- und Lebenssituation"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Gewalterfahrung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Sozioökonomische Situation"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Familiäre und soziale Unterstützung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Besondere Belastungen in der Familie"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Betreuungssituation"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "choice",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "drop-down",
+                            "display": "Drop down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "449551727314",
+                  "text": "Apgar-Score Wert",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 0 "
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 1"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 2"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 3"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 4"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 5"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 6"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 7 "
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 8 "
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 9"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Apgar 10 "
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "choice",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "drop-down",
+                            "display": "Drop down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "434157677778",
+                  "text": "Apgar-Score Zeitpunkt",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "1 min nach Geburt"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "5 min nach Geburt"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "10 min nach Geburt"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "969176312211",
+              "text": "Apgar-Score",
+              "repeats": true
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "451737546198",
+              "text": "Länge"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g",
+                    "display": "gram"
+                  }
+                }
+              ],
+              "linkId": "800807581970",
+              "text": "Gewicht"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "325795174462",
+              "text": "Kopfumfang"
+            },
+            {
+              "type": "string",
+              "linkId": "718572607499",
+              "text": "Beobachtungen"
+            },
+            {
+              "type": "string",
+              "linkId": "744249999088",
+              "text": "Bemerkung Erstversorgung"
+            },
+            {
+              "type": "boolean",
+              "linkId": "420621322972",
+              "text": "Bedarf an zusätzlicher Überwachung im Wochenbett"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "746759350877",
+          "text": "Untersuchung"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "638315396264",
+              "text": "1. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "152517215269",
+              "text": "2. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "374554495827",
+              "text": "3. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "linkId": "771921413769",
+              "text": "Eltern wünschen keine Vitamin K-Gabe"
+            },
+            {
+              "type": "string",
+              "linkId": "661141889896",
+              "text": "Bemerkung Gabe Vitamin K"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "921722585922",
+          "text": "Vitamin-K-Gabe"
+        },
+        {
+          "item": [
+            {
+              "item": [
+                {
+                  "type": "date",
+                  "linkId": "448070142439",
+                  "text": "Datum"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "129658059334",
+                  "text": "Befund",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Unauffällig bds"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Auffällig rechts"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Auffällig links"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Unbekannt"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Nicht durchgeführt"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "choice",
+                  "linkId": "135677480769",
+                  "text": "Weiteres Vorgehen",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Überweisung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Behandlungsempfehlung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Nachkontrolle"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "boolean",
+                  "linkId": "136675658747",
+                  "text": "Eltern wünschen keine frühe Augenuntersuchung"
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "504256287770",
+              "text": "Fundusleuchten"
+            },
+            {
+              "item": [
+                {
+                  "type": "date",
+                  "linkId": "465319343778",
+                  "text": "Termin"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "114975668294",
+                  "text": "Typ der Messung",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Erstuntersuchung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Kontrolluntersuchung"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "quantity",
+                  "linkId": "539192119696",
+                  "text": "Messwert"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "746251156925",
+                  "text": "Ergebnis"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "404616260249",
+                  "text": "Weiteres Vorgehen",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Überweisung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Behandlungsempfehlung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Nachkontrolle"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "linkId": "766423987294",
+                  "text": "Bemerkungen"
+                },
+                {
+                  "type": "boolean",
+                  "linkId": "358143779371",
+                  "text": "Eltern wünschen keine Pulsokymetrie"
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "797757424440",
+              "text": "Pulsokymetrie (POX)"
+            },
+            {
+              "item": [
+                {
+                  "type": "date",
+                  "linkId": "419057068355",
+                  "text": "Datum"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "474154357491",
+                  "text": "Methode",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Erstuntersuchung mittel TEOA"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Erstuntersuchung mittels AABR"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Kontroll-OAE bei auffälligem Erstbefund"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Kontroll-AABR bei auffälligem Erstbefund"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "linkId": "575713663613",
+                  "text": "Befund"
+                },
+                {
+                  "type": "choice",
+                  "linkId": "369578936879",
+                  "text": "Weiteres Vorgehen",
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "display": "Überweisung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Behandlungsempfehlung"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "display": "Nachkontrolle"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "string",
+                  "linkId": "384655425593",
+                  "text": "Bemerkungen"
+                },
+                {
+                  "type": "boolean",
+                  "linkId": "976850830905",
+                  "text": "Eltern wünschen kein Hörscreening"
+                }
+              ],
+              "type": "group",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "gtable",
+                        "display": "Group Table"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "669781921139",
+              "text": "Gehörscreening (OAE)"
+            }
+          ],
+          "type": "group",
+          "linkId": "413425877540",
+          "text": "Spezielle Früherkennungsuntersuchungen"
+        }
+      ],
+      "type": "group",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "list",
+                "display": "List"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "998162020739",
+      "text": "Vorsorgeuntersuchung Geburt",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "type": "date",
+          "linkId": "356426979453",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "462319081828",
+          "text": "Zeitpunkt der Untersuchung",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "3. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "5. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "7. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "8. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "9. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "10. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "11. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "13. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "14. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "21. LT"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "27. LT"
+              }
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "linkId": "959757032139",
+              "text": "Art der Ernährung",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Gestillt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zwiemilchernährung"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Formula"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Beikost"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Vom Tisch"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "linkId": "292499164080",
+              "text": "Anzahl der täglichen Mahlzeiten"
+            },
+            {
+              "type": "quantity",
+              "linkId": "417514970799",
+              "text": "Menge der Mahlzeit"
+            },
+            {
+              "type": "string",
+              "linkId": "845051880490",
+              "text": "Bemerkung Mahlzeit"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "897430653643",
+          "text": "Ernährung"
+        },
+        {
+          "type": "string",
+          "linkId": "546123184790",
+          "text": "Dokumentation",
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "225692107497",
+              "text": "Saugverhalten",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "118170326065",
+              "text": "Bemerkungen Saugverhalten"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "512551488072",
+              "text": "Schlafverhalten",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "530703577703",
+              "text": "Bemerkungen Schlafverhalten"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "748098752715",
+              "text": "Aussscheidung",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "747991125352",
+              "text": "Bemerkung Ausscheidung"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "891354483777",
+              "text": "Stuhlgang / Verdauung",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Unauffällig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Auffällig/Kontrollbedürftig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht durchgeführt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "889106250230",
+              "text": "Bemerkungen Stuhlgang"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "875050476652",
+              "text": "Stuhlfarbe",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Normal (1-4)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Kontrollbedürftig (5-7)"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "404979328467",
+              "text": "Länge"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g",
+                    "display": "gram"
+                  }
+                }
+              ],
+              "linkId": "977244976521",
+              "text": "Gewicht"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "218671247474",
+              "text": "Kopfumfang"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2",
+                    "display": "kilogram per square meter"
+                  }
+                }
+              ],
+              "linkId": "724968638779",
+              "text": "BMI"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]",
+                    "display": "millimeter of mercury"
+                  }
+                }
+              ],
+              "linkId": "568745489887",
+              "text": "Systolischer Blutdruckwert"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]",
+                    "display": "millimeter of mercury"
+                  }
+                }
+              ],
+              "linkId": "992117491704",
+              "text": "Diastolischer Blutdruckwert"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "bpm"
+                  }
+                }
+              ],
+              "linkId": "958376869782",
+              "text": "Herzfrequenz"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "°C"
+                  }
+                }
+              ],
+              "linkId": "772924970424",
+              "text": "Temperatur"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "Pro Minute"
+                  }
+                }
+              ],
+              "linkId": "466798413836",
+              "text": "Atemfrequenz"
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "473756498325",
+              "text": "Haut",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Auffällige Blässe"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zyanose"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Ikterus"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hämangiome"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Naevi und andere Pigmentanomalien"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Ödeme"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Anhalt für Verletzungen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Hydratationszustand"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unauffälliger Hautbefund"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "113424779827",
+              "text": "Beurteilung Nabel",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Nabelklemme entfernt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabelrest dran"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel abgefallen"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel reizlos"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel trocken"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel blutig"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nabel schmierig"
+                  }
+                }
+              ]
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "891857354457",
+          "text": "Untersuchung"
+        }
+      ],
+      "type": "group",
+      "linkId": "290467965486",
+      "text": "Kontrolle Hebammen",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      },
+      "repeats": true
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "354370381198",
+          "text": "Untersuchungszeitpunkt",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Geburt"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Austrittsuntersuchung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1. Lebenswoche"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1 Monat"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "2 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "9 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "18 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "24 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "3 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "10 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "14 Jahre"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "356383099864",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "string",
+          "linkId": "519862271909",
+          "text": "Aktuelle Anamnese"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "863282935783",
+              "text": "Verlegung auf KIPS/Neonatologie",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Nein"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "KIPS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Kinderklinik"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "linkId": "448569608374",
+              "text": "Datum der Verlegung"
+            },
+            {
+              "type": "string",
+              "linkId": "345589065502",
+              "text": "Bemerkungen zur Verlegung"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "551110135947",
+          "text": "Verlegung"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "linkId": "971649749265",
+              "text": "Art der Ernährung",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Gestillt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zwiemilchernährung"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Formula"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Beikost"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Vom Tisch"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "Mahlzeiten"
+                  }
+                }
+              ],
+              "linkId": "407981358049",
+              "text": "Anzahl der Täglichen Mahlzeit"
+            },
+            {
+              "type": "quantity",
+              "linkId": "946959955838",
+              "text": "Menge der Mahlzeit"
+            },
+            {
+              "type": "string",
+              "linkId": "312399151544",
+              "text": "Bemerkungen Mahlzeiten"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "714641034582",
+          "text": "Ernährung"
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "270174659236",
+              "text": "Länge"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg",
+                    "display": "kilogram"
+                  }
+                }
+              ],
+              "linkId": "368551208392",
+              "text": "Gewicht"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "731319991328",
+              "text": "Kopfumfang"
+            },
+            {
+              "type": "choice",
+              "linkId": "139159388627",
+              "text": "Untersuchung im Wochenbett"
+            },
+            {
+              "type": "string",
+              "linkId": "101106649632",
+              "text": "Bemerkungen Wochenbett"
+            },
+            {
+              "type": "date",
+              "linkId": "985796791302",
+              "text": "Darum Entlassung"
+            },
+            {
+              "type": "string",
+              "linkId": "406885613268",
+              "text": "Gewicht bei Entlassung"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "983589773595",
+          "text": "Untersuchung"
+        },
+        {
+          "item": [
+            {
+              "type": "date",
+              "linkId": "464192559721",
+              "text": "Datum der Messung"
+            },
+            {
+              "type": "choice",
+              "linkId": "239513719417",
+              "text": "Methode",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Transkutan"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Blutig"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "linkId": "672391563069",
+              "text": "Messwert"
+            },
+            {
+              "type": "string",
+              "linkId": "711683010367",
+              "text": "Bemerkung Bilirubinwerte"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "380882583276",
+          "text": "Bilirubin"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "800409445825",
+              "text": "1. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "864826032982",
+              "text": "2. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "819647388262",
+              "text": "3. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "linkId": "984246199046",
+              "text": "Eltern wünschen keine Vitamin K-Gabe"
+            },
+            {
+              "type": "string",
+              "linkId": "182485772776",
+              "text": "Bemerkung Gabe Vitamin K"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "387882229414",
+          "text": "Vitamin-K-Gabe"
+        },
+        {
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "311443265062",
+          "text": "Prüfung, Aufklärung und Beratung",
+          "item": [
+            {
+              "type": "boolean",
+              "linkId": "647191951099",
+              "text": "Vitamin D"
+            },
+            {
+              "type": "boolean",
+              "linkId": "510747137133",
+              "text": "Erklärung Stuhl-Farben-Karte"
+            },
+            {
+              "type": "string",
+              "linkId": "706421125053",
+              "text": "Empfehlungen"
+            }
+          ]
+        }
+      ],
+      "type": "group",
+      "linkId": "507500845512",
+      "text": "Vorsorgeuntersuchung Austrittsuntersuchung",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "drop-down",
+                    "display": "Drop down"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "318462346442",
+          "text": "Untersuchungszeitpunkt",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "display": "Geburt"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "Austrittsuntersuchung"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1. Lebenswoche"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "1 Monat"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "2 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "9 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "18 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "24 Monate"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "3 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "4 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "6 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "10 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "12 Jahre"
+              }
+            },
+            {
+              "valueCoding": {
+                "display": "14 Jahre"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "linkId": "599445451242",
+          "text": "Untersuchungsdatum"
+        },
+        {
+          "type": "choice",
+          "linkId": "562301916799",
+          "text": "Aktuelle Anamnese",
+          "repeats": true
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "240793559496",
+              "text": "Verlegung auf KIPS/Neonatologie",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Nein"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "KIPS"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Kinderklinik"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "date",
+              "linkId": "436200042172",
+              "text": "Datum der Verlegung"
+            },
+            {
+              "type": "string",
+              "linkId": "251559761270",
+              "text": "Bemerkungen zur Verlegung"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "959143826070",
+          "text": "Verlegung"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "linkId": "642880834493",
+              "text": "Art der Ernährung",
+              "repeats": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Gestillt"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Zwiemilchernährung"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Formula"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Beikost"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Vom Tisch"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "display": "Mahlzeiten"
+                  }
+                }
+              ],
+              "linkId": "927572445005",
+              "text": "Anzahl der Täglichen Mahlzeit"
+            },
+            {
+              "type": "quantity",
+              "linkId": "422931735950",
+              "text": "Menge der Mahlzeit"
+            },
+            {
+              "type": "string",
+              "linkId": "210859762492",
+              "text": "Bemerkungen Mahlzeiten"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "655537321749",
+          "text": "Ernährung"
+        },
+        {
+          "item": [
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "831538164402",
+              "text": "Länge"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg",
+                    "display": "kilogram"
+                  }
+                }
+              ],
+              "linkId": "799789301977",
+              "text": "Gewicht"
+            },
+            {
+              "type": "quantity",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm",
+                    "display": "centimeter"
+                  }
+                }
+              ],
+              "linkId": "504243730625",
+              "text": "Kopfumfang"
+            },
+            {
+              "type": "choice",
+              "linkId": "878454991313",
+              "text": "Untersuchung im Wochenbett"
+            },
+            {
+              "type": "string",
+              "linkId": "296491136704",
+              "text": "Bemerkungen Wochenbett"
+            },
+            {
+              "type": "date",
+              "linkId": "452380123836",
+              "text": "Darum Entlassung"
+            },
+            {
+              "type": "string",
+              "linkId": "860839359615",
+              "text": "Gewicht bei Entlassung"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "list",
+                    "display": "List"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "309693098918",
+          "text": "Untersuchung"
+        },
+        {
+          "item": [
+            {
+              "type": "date",
+              "linkId": "238240792067",
+              "text": "Datum der Messung"
+            },
+            {
+              "type": "choice",
+              "linkId": "712329121918",
+              "text": "Methode",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Transkutan"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Blutig"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "linkId": "178656652553",
+              "text": "Bemerkung Bilirubinwerte"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "869935044428",
+          "text": "Bilirubin"
+        },
+        {
+          "item": [
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "550604461310",
+              "text": "1. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "821507049631",
+              "text": "2. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "choice",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "drop-down",
+                        "display": "Drop down"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "linkId": "450022395113",
+              "text": "3. Dosis",
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "display": "Verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Nicht verabreicht"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "display": "Unbekannt"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "linkId": "644103179498",
+              "text": "Eltern wünschen keine Vitamin K-Gabe"
+            },
+            {
+              "type": "string",
+              "linkId": "442717925910",
+              "text": "Bemerkung Gabe Vitamin K"
+            }
+          ],
+          "type": "group",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "gtable",
+                    "display": "Group Table"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "395161628485",
+          "text": "Vitamin-K-Gabe"
+        }
+      ],
+      "type": "group",
+      "linkId": "932233723027",
+      "text": "Vorsorgeuntersuchung 1. Lebenswoche",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "group",
+      "linkId": "495871794500",
+      "text": "Vorsorgeuntersuchung 1. Monat",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "632101752131",
+      "text": "Vorsorgeuntersuchung 4 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "545060753268",
+      "text": "Vorsorgeuntersuchung 6 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "675470411512",
+      "text": "Vorsorgeuntersuchung 9 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "756633360713",
+      "text": "Vorsorgeuntersuchung 12 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "529107226504",
+      "text": "Vorsorgeuntersuchung 18 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "914076257004",
+      "text": "Vorsorgeuntersuchung 24 Monate",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "900067836885",
+      "text": "Vorsorgeuntersuchung 3 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "797471923035",
+      "text": "Vorsorgeuntersuchung 4 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "112950421432",
+      "text": "Vorsorgeuntersuchung 6 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "754861424839",
+      "text": "Vorsorgeuntersuchung 10 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "725305230244",
+      "text": "Vorsorgeuntersuchung 12 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "773569971853",
+      "text": "Vorsorgeuntersuchung 14 Jahre",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "501031472644",
+      "text": "Schulgesundheitsdienst",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    },
+    {
+      "type": "string",
+      "linkId": "392004030396",
+      "text": "Impfungen",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+            "valueString": "#cssDisplay {\n  background-color: #FFFFFF;\n  color: #000000;\n  font-weight: bolder;\n  font-size: 20px;\n}"
+          }
+        ]
+      }
+    }
+  ]
+}
